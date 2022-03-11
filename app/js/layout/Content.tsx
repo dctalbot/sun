@@ -8,6 +8,7 @@ function Content() {
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900">
           SunRise / SunSet
         </h1>
+        <p>All times are in the local (system) time zone.</p>
       </header>
       <main>
         <LatLonTool />
