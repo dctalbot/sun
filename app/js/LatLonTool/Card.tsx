@@ -32,7 +32,7 @@ function Card({ id, value, onChange, onClose }: CardProps) {
     onChange(cand);
   };
 
-  // debounce search query as user types
+  // debounce API req as user types
   useEffect(() => {
     const t = setTimeout(() => {
       performFetch();
