@@ -5,7 +5,7 @@
   "main": "build/main.js",
   "scripts": {
     "ci": "tsc -p tsconfig.json",
-    "tw": "npx tailwindcss -i ./app/css/main.css -o ./build/main.css --watch",
+    "tw": "npx tailwindcss -i ./app/css/main.css -o ./build/main.css --minify --watch",
     "esbuild": "esbuild --define:global=window --outdir=build --bundle --minify app/js/main.tsx --watch",
     "dev": "overmind start"
   },
