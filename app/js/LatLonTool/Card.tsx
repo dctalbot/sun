@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Value } from "./LatLonTool";
+import { Value, zeroVal } from "./LatLonTool";
 import { fethcSunTimes, fmtTime } from "../util/api";
 
 interface CardProps {
@@ -15,6 +15,7 @@ function Card({ id, value, onChange, onClose }: CardProps) {
   const [latID, lonID] = [`${id}-lat`, `${id}-lon`];
 
   const performFetch = async () => {
+    if (!value.lat || !value.lon) return zeroVal;
     const res = await fethcSunTimes(value.lat, value.lon);
     onChange({
       ...value,

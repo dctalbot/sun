@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "./Card";
 import AddNext from "./AddNext";
 
-const zeroVal = { lat: "0.0", lon: "0.0", sunrise: "", sunset: "" };
+export const zeroVal = { lat: "", lon: "", sunrise: "", sunset: "" };
 export type Value = typeof zeroVal;
 
 function LatLonTool() {
