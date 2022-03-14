@@ -1,3 +1,28 @@
+# Development
+
+## Dev Dependencies
+
+1. [npm / npx](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+2. [overmind](https://github.com/DarthSim/overmind)
+
+If you are on a mac, both of these are available on [homebrew](https://brew.sh/).
+
+## Running locally
+
+```
+git clone git@github.com:dctalbot/sun.git
+cd sun
+open build/index.html
+npm install
+overmind start 
+```
+
+Workflow:
+1. Make a change
+2. Observe new build artifact(s) (`git diff build`)
+3. Reload browser (It's manual at the moment, hot reloading is a TODO)
+
+
 # Demo
 
 https://dctalbot.github.io/sun/build
